@@ -43,4 +43,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-SELECT K0, AVG(c21) FROM tbl2 WHERE c13 > 400 GROUP BY K0
+SELECT A.K0, AVG(B.c21) FROM tbl1 A JOIN tbl2 B ON A.K0 = B.K0  WHERE A.c13 > 400 GROUP BY A.K0
